@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100&family=Open+Sans:wght@300&display=swap');
+    </style>
+</head>
+
+<body onload="displayAnswer()">
+    <div class="container">
+        <div onclick="open_popup();" class="easy-mode">Easy Mode ?</div>
+        <div class="round ">
+            <p> <span class="display-round" id="rounds"> </span> / 10</p>
+            <p id="hint" >1 - 50 </p>
+        </div>
+        <input id="input-easy" type="number" min="1" max="50" class="input-number" oninput="limitInputLength(this, 2)"
+            placeholder=" a number" required>
+        <div class="display-number">
+            <div class="display-row-1">
+                <div class="one" id="number1"></div>
+                <div class="one" id="number2"></div>
+            </div>
+            <div class="display-row-2">
+                <div class="two" id="number3"></div>
+                <div class="two" id="number4"></div>
+            </div>
+            <div class="popup-answer" id="popup">
+                <div class="answer" id="answerPopup">
+
+                </div>
+                <div onclick="close_popup();" class="btn-ok" o>
+                    OK
+                </div>
+            </div>
+            <div class="popup-youwin" id="popup_youwin">
+                <div class="win">
+                    Youwin
+                </div>
+                <div onclick="close_popup();" class="newgame" o>
+                    <a href="./index.html">New GAME</a>
+                </div>
+            </div>
+            <div class="popup-youlost" id="popup_youlost">
+                <div class="lost">
+                    youlost <br>
+                    ;(
+                </div>
+                <div onclick="close_popup();" class="newgamelost" o>
+                    <a href="./index.html">New GAME</a>
+                </div>
+            </div>
+        </div>
+        <button onclick="check_input();" type="button" class="btn-check">Check</button>
+    </div>
+</body>
+
+</html>
+
+<script src="logic.js">
+
+</script>
