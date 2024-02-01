@@ -1,1 +1,1 @@
-<a href='https://khanchai.githun.io/TenAnswer'>  ลองเล่น </a>
+<a href='https://khanchai.github.io/TenAnswer'>  ลองเล่น </a>
