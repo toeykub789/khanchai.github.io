@@ -1,4 +1,5 @@
-<h1>TenAnswer HTML CSS Javascript</h1>
+<h1>TenAnswer</h1>
+  <p> HTML CSS Javascript </p>p
 <a href="https://toeykub789.github.io/TenAnswer"> play game </a>
 
 <h1>portfolio</h1>
